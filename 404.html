@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#f5f5f1">
+  <meta name="theme-color" content="#dfe7df">
   <title>404 — העמוד לא נמצא | Natali Clinic</title>
   <style>
     :root {
@@ -12,8 +12,8 @@
       --green-dark: #516a58;
       --violet: #7d6071;
       --violet-dark: #634957;
-      --cream: #f5f5f1;
-      --paper: #fff;
+      --cream: #dfe7df;
+      --paper: #f8faf7;
       --text: #333734;
       --muted: #697169;
       --line: rgba(81, 106, 88, 0.2);
@@ -39,8 +39,8 @@
       color: var(--text);
       font-family: Arial, "Noto Sans Hebrew", "Segoe UI", sans-serif;
       background:
-        radial-gradient(circle at 14% 12%, rgba(109, 139, 116, 0.15), transparent 29rem),
-        radial-gradient(circle at 88% 92%, rgba(125, 96, 113, 0.12), transparent 27rem),
+        radial-gradient(circle at 14% 12%, rgba(109, 139, 116, 0.22), transparent 29rem),
+        radial-gradient(circle at 88% 92%, rgba(125, 96, 113, 0.14), transparent 27rem),
         var(--cream);
     }
 
@@ -49,8 +49,8 @@
       padding: clamp(14px, 2.7vw, 24px) clamp(16px, 4vw, 42px) clamp(26px, 4vw, 38px);
       overflow: hidden;
       text-align: center;
-      background: rgba(255, 255, 255, 0.93);
-      border: 1px solid var(--line);
+      background: rgba(240, 245, 239, 0.97);
+      border: 1px solid rgba(81, 106, 88, 0.26);
       border-radius: 28px;
       box-shadow: 0 18px 55px rgba(51, 55, 52, 0.1);
     }
@@ -136,9 +136,11 @@
 
     .copyright {
       margin: 20px 0 0;
-      color: var(--muted);
+      color: var(--green-dark);
       font-size: 0.78rem;
       text-align: center;
+      direction: ltr;
+      unicode-bidi: isolate;
     }
 
     @media (max-width: 550px) {
@@ -196,11 +198,14 @@
     </nav>
   </main>
   
-  <p>© <span class="current-year">2026</span> Natali Clinic</p>
-    <script>
-  document.querySelectorAll(".current-year").forEach((element) => {
-    element.textContent = new Date().getFullYear();
-  });
-</script>
+  <p class="copyright" dir="ltr">
+    © <span class="current-year">2026</span> Natali Clinic
+  </p>
+
+  <script>
+    document.querySelectorAll(".current-year").forEach((element) => {
+      element.textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>
