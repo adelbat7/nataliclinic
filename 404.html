@@ -195,7 +195,12 @@
       <a href="https://wa.me/972585349125" target="_blank" rel="noopener">WhatsApp</a>
     </nav>
   </main>
-
-  <p class="copyright" dir="ltr">© 2026 Natali Clinic · All rights reserved</p>
+  
+  <p>© <span class="current-year">2026</span> Natali Clinic</p>
+    <script>
+  document.querySelectorAll(".current-year").forEach((element) => {
+    element.textContent = new Date().getFullYear();
+  });
+</script>
 </body>
 </html>

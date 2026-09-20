@@ -226,8 +226,13 @@
           <a class="map-link" href="https://maps.app.goo.gl/th1kcimEhLu24rFx6" target="_blank" rel="noopener">פתיחת ניווט ב‑Google Maps ↗</a>
         </div>
       </div>
-      <div class="copyright"><p>© 2026 Natali Clinic.</p></div>
+      <div class="copyright"><p>© <span class="current-year">2026</span> Natali Clinic</p></div>
     </div>
   </footer>
+  <script>
+  document.querySelectorAll(".current-year").forEach((element) => {
+    element.textContent = new Date().getFullYear();
+  });
+</script>
 </body>
 </html>
